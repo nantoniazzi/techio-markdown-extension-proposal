@@ -38,7 +38,7 @@ With this new syntax `[RUN]` is a reserved link label used to define an interact
 Most of the time, existing learning content contains source code sample that should be displayed to the user. There is the triple backtick syntax for this:
 
 ````
-```
+```javascript
 function hello() {
   console.log("hello world!");
 }
@@ -47,7 +47,7 @@ function hello() {
 
 It is rendered like this:
 
-```
+```javascript
 function hello() {
   console.log("hello world!");
 }
