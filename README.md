@@ -10,7 +10,7 @@ The current syntax looks to somethink like this:
 
 And on github, it is rendered as:
 
-@[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
+> @[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
 
 which is quite ugly :)
 
@@ -19,6 +19,9 @@ I propose to use the label syntax to hide this:
 ```
 [TECHIO-RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
 ```
+
+which is render as:
+> 
 
 In this syntax `[TECHIO-RUN]` is a reserved link label used to define an interactive code section. The title is moved into an attribute of the token. We can also rely on a simplified syntax (not a json with all the heavy quotes.
 
