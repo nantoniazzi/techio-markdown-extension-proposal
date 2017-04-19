@@ -68,6 +68,10 @@ function hello() {
 }
 ```
 
+```css,/project/target/src/hello.css
+body { background-color: red; }
+```
+
 [\RUN]: #
 ````
 
@@ -79,6 +83,10 @@ And the displayed result would be:
 function hello() {
   console.log("hello world!");
 }
+```
+
+```css,/project/target/src/hello.css
+body { background-color: red; }
 ```
 
 [\RUN]: #
