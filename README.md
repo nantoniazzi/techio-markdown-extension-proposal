@@ -14,6 +14,7 @@ I propose to use the label syntax to hide this:
 [TECHIO-RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
 ```
 which is render as:
+
 [TECHIO-RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
 
 _Nothing... but in the source code, the previous line as been inserted_
