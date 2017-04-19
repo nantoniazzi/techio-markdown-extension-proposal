@@ -15,7 +15,9 @@ I propose to use the label syntax to hide this:
 ```
 which is render as:
 [TECHIO-RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
+
 _Nothing... but in the source code, the previous line as been inserted_
+
 
 In this syntax `[TECHIO-RUN]` is a reserved link label used to define an interactive code section. The title is moved into an attribute of the token. We can also rely on a simplified syntax (not a json with all the heavy quotes.
 
