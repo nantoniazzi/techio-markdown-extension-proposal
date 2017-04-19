@@ -31,7 +31,7 @@ which is rendered as:
 
 _Nothing... but in the source code, the previous line has really been inserted_
 
-With this new syntax `[RUN]` is a reserved link label used to define an interactive code section. The title is moved into an attribute of the token. We can also rely on a simplified syntax (not a big json with all the heavy quotes) for the attributes name and values. You can also notice the use of the singuar `stub` parameter to avoid the use of brackets.
+With this new syntax `[RUN]` is a reserved link label used to define an interactive code section. The title is moved into an attribute of the token. We can also rely on a simplified syntax (not a big json with all the heavy quotes) for the attributes name and values. You can also notice the use of the singular `stub` parameter to avoid the use of brackets.
 
 ## Displayed interactive code section
 
