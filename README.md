@@ -11,11 +11,11 @@ Sometime, we just want to insert in the middle of an existig documentation an in
 
 Our current interactive code section syntax looks like this:
 ```
-@[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
+@[This is the label of my run command]({"command":"run.sh", "stubs":["src/hello.js"]})
 ```
 And on github, it is rendered as:
 
-@[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
+@[This is the label of my run command]({"command":"run.sh", "stubs":["src/hello.js"]})
 
 which is quite ugly and not understandable.
 
