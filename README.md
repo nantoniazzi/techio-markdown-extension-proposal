@@ -23,19 +23,19 @@ which is quite ugly :)
 
 I propose to use the label syntax to hide this:
 ```
-[TECHIO-RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
+[RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
 ```
 which is render as:
 
-[TECHIO-RUN]: # (command:run.sh, stub:src/hello.js, title:Execute this program)
+[RUN]: # (command:run.sh, stub:src/hello.js, title:Execute this program)
 
 _Nothing... but in the source code, the previous line has been inserted_
 
-With this syntax `[TECHIO-RUN]` is a reserved link label used to define an interactive code section. The title is moved into an attribute of the token. We can also rely on a simplified syntax (not a json with all the heavy quotes) for the attributes name and values.
+With this syntax `[RUN]` is a reserved link label used to define an interactive code section. The title is moved into an attribute of the token. We can also rely on a simplified syntax (not a json with all the heavy quotes) for the attributes name and values.
 
 ## Displayed interactive code section
 
-Most of the time, existing learning content also contains source code sample that should be displayed to the user. There is the triple backquote syntax for this. It is rendered like this:
+Most of the time, existing learning content also contains source code sample that should be displayed to the user. There is the triple backtick syntax for this. It is rendered like this:
 
 ```
 function hello() {
@@ -44,12 +44,13 @@ function hello() {
 ```
 
 Sometime, we want to make this code section also runnable.
-I propose to surroud this code section with the tokens `TECHIO-RUN:BEGIN]` and `[TECHIO-RUN:END]`.
+
+I propose to surroud this code section with the tokens `[RUN:BEGIN]` and `[RUN:END]`.
 
 It could be something like this:
 
 ````
-[RUN-BEGIN]: # (cmd:run.sh, stubs:[src/index.htm:html, src/style.css], title:Execute this program)
+[RUN:BEGIN]: # (cmd:run.sh, stubs:[src/index.htm:html, src/style.css], title:Execute this program)
 
 ```javascript,/project/target/src/hello.js
 function hello() {
@@ -57,5 +58,19 @@ function hello() {
 }
 ```
 
-[RUN-END]: #
+[RUN:END]: #
 ````
+
+And the displayed result would be:
+
+[RUN:BEGIN]: # (cmd:run.sh, stubs:[src/index.htm:html, src/style.css], title:Execute this program)
+
+```javascript,/project/target/src/hello.js
+function hello() {
+  console.log("hello world!");
+}
+```
+
+[RUN:END]: #
+
+You can also notice the path of the file next to the three backtick. It gives the target path where the file should be written once that `RUN` is clicked. It is also a way to have a working and compiling code in the docker image and display a non compiling content (a content to fix) to the user.
