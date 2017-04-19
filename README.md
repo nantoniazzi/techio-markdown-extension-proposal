@@ -3,17 +3,23 @@
 The current tech.io markdown is not standard and break the rendering compatibility with other markdown platforms.
 This document is a proposal to make it more standard.
 
-#### Hidden interactive code
+## Hidden interactive code
 
 Sometime, we just want to insert in the middle of existig course a run command, that should be hidden for every platform that do not accept interactive section.
+
+### Current syntax
 
 Our current syntax looks to somethink like this:
 ```
 @[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
 ```
 And on github, it is rendered as:
-> @[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
+
+@[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
+
 which is quite ugly :)
+
+### New proposal
 
 I propose to use the label syntax to hide this:
 ```
