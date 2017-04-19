@@ -1,27 +1,21 @@
 The current tech.io markdown is not standard and break the rendering compatibility with other markdown platform
-
 This document is a proposal to make it more standard.
 
 The current syntax looks to somethink like this:
-
 ```
 @[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
 ```
-
 And on github, it is rendered as:
-
 > @[This is the label of my run command]({"command":"run.sh", stubs:["src/hello.js"]})
-
 which is quite ugly :)
 
 I propose to use the label syntax to hide this:
-
 ```
 [TECHIO-RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
 ```
-
 which is render as:
-> 
+[TECHIO-RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
+_Nothing... but in the source code, the previous line as been inserted_
 
 In this syntax `[TECHIO-RUN]` is a reserved link label used to define an interactive code section. The title is moved into an attribute of the token. We can also rely on a simplified syntax (not a json with all the heavy quotes.
 
