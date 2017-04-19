@@ -48,14 +48,14 @@ I propose to surroud this code section with the tokens `TECHIO-RUN:BEGIN]` and `
 
 It could be something like this:
 
-```
+````
 [RUN-BEGIN]: # (cmd:run.sh, stubs:[src/index.htm:html, src/style.css], title:Execute this program)
 
-````javascript,/project/target/src/hello.js
+```javascript,/project/target/src/hello.js
 function hello() {
   console.log("hello world!");
 }
-````
+```
 
 [RUN-END]: #
-```
+````
