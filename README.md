@@ -43,7 +43,10 @@ function hello() {
 }
 ```
 
-Sometime, we want to make this code section also runnable. I propose to surroud this code section with the tokens `TECHIO-RUN:BEGIN]` and `[TECHIO-RUN:END]`. It could be something like this:
+Sometime, we want to make this code section also runnable.
+I propose to surroud this code section with the tokens `TECHIO-RUN:BEGIN]` and `[TECHIO-RUN:END]`.
+
+It could be something like this:
 
 ```
 [RUN-BEGIN]: # (cmd:run.sh, stubs:[src/index.htm:html, src/style.css], title:Execute this program)
@@ -56,25 +59,3 @@ function hello() {
 
 [RUN-END]: #
 ```
-
-Some contributors contains source code that should be displayed to the use. Sometime, we also want this source code to be runnable.
-
-The markdown syntax could be more standard like:
-
-[RUN-BEGIN]: # (cmd:run.sh, stubs:[src/index.htm:html, src/style.css])
-
-###### Execute this program
-
-```javascript,/project/target/src/hello.js
-function hello() {
-  console.log("hello world!");
-}
-```
-
-[RUN-END]: #
-
-Or for content where everything is hidden:
-
-[RUN]: # (cmd:run.sh, stub:src/hello.js, title:Execute this program)
-
-_you will actually need to go to the source code to actually see this_
