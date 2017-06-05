@@ -91,4 +91,4 @@ body { background-color: red; }
 
 [\RUN]: #
 
-You can also notice the path of the file next to the three backtick. It gives the target path where the file should be written once the `RUN` button is clicked. It is also a way to have a working and compiling code in the docker image and display a non compiling content (a content to fix) to the user. We can also include some extra stubs, using the `stub` or `stubs` attribute, which will not be displayed in the markdown.
+You can also notice the path of the file next to the three backtick. It gives the target path where the file should be written once the `RUN` button is clicked. It is also a way to have a **working and compiling code in the docker image** and **display a non compiling content (a content to fix) to the user**. We can also include some extra stubs, using the `stub` or `stubs` attribute, which will not be displayed in the markdown.
