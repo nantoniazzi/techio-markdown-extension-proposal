@@ -119,7 +119,7 @@ function hello() {
   console.log("hello world!");
 }
 ```
-```css,/project/target/src/hello.css
+```css, dest:/project/target/src/hello.css
 body { background-color: red; }
 ```
 
