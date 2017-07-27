@@ -101,7 +101,7 @@ All code blocks that have a command
 
 ````
 
-```javascript,path:/project/target/src/hello.js,cmd:run.sh,stubs:[src/index.htm:html, src/style.css],title:Execute this program
+```javascript,path:/project/target/src/hello.js, cmd:run.sh, title:Execute this program
 function hello() {
   console.log("hello world!");
 }
@@ -114,7 +114,7 @@ body { background-color: red; }
 
 It would display this:
 
-```javascript, path:/project/target/src/hello.js, cmd:run.sh, title:Execute this program
+```javascript, dest:/project/target/src/hello.js, cmd:run.sh, title:Execute this program, stubs:[index.html, style.css]
 function hello() {
   console.log("hello world!");
 }
