@@ -160,7 +160,7 @@ body { background-color: red; }
 ## New proposal to match the snippet syntax (oct. 9th, 2017)
 
 ````
-```javascript file:src/hello.js title:'Execute this program' cmd:run.sh 
+```javascript file:src/hello.js title:'Execute this program' cmd:run.sh image:'node:8.6'
 function hello() {
   console.log("hello world!");
 }
