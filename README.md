@@ -156,3 +156,35 @@ function hello() {
 ```css 
 body { background-color: red; }
 ```
+
+## New proposal to match the snippet syntax (oct. 9th, 2017)
+
+````
+```javascript file:src/hello.js title:'Execute this program' cmd:run.sh 
+function hello() {
+  console.log("hello world!");
+}
+```
+```html index.htm
+```
+```css style.css
+```
+```css src/hello.css
+body { background-color: red; }
+```
+````
+
+It displays this:
+
+```javascript file:src/hello.js title:'Execute this program' cmd:run.sh 
+function hello() {
+  console.log("hello world!");
+}
+```
+```html index.htm
+```
+```css style.css
+```
+```css 
+body { background-color: red; }
+```
