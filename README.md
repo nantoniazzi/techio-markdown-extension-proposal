@@ -126,7 +126,7 @@ body { background-color: red; }
 ## Final proposal
 
 ````
-[RUN]: # cmd:run.sh, title:Execute this program
+[RUN]: # (cmd:run.sh, title:Execute this program)
 ```javascript src/hello.js
 function hello() {
   console.log("hello world!");
@@ -143,7 +143,7 @@ body { background-color: red; }
 
 It displays this:
 
-[RUN]: # cmd:run.sh, title:Execute this program
+[RUN]: # (cmd:run.sh, title:Execute this program)
 ```javascript src/hello.js
 function hello() {
   console.log("hello world!");
