@@ -176,7 +176,7 @@ body { background-color: red; }
 
 It displays this:
 
-```javascript file:src/hello.js title:'Execute this program' cmd:run.sh 
+```javascript file:src/hello.js title:'Execute this program' cmd:run.sh image:'node:8.6'
 function hello() {
   console.log("hello world!");
 }
